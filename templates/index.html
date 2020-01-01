@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>textutils.com</title>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <!-- Brand -->
+  <a class="navbar-brand" href="#">Logo</a>
+
+  <!-- Links -->
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="#">about us</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">contact us</a>
+    </li>
+
+    <!-- Dropdown -->
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        more options
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Link 1</a>
+        <a class="dropdown-item" href="#">Link 2</a>
+        <a class="dropdown-item" href="#">Link 3</a>
+      </div>
+
+    </li>
+    <li>
+      <form class="form-inline" action="/action_page.php">
+     <input class="form-control mr-sm-2" type="text" placeholder="Search">
+     <button class="btn btn-success" type="submit">Search</button>
+   </form>
+</li>
+  </ul>
+</nav>
+
+    <h6 class="bg-warning"><b>welcome</b> to the textutils.com . Here you can do anything with your text!!!</h6>
+
+    <div class="container">
+      <h4>Enter your text below:</h4>
+      <form action="/analyze" method="get">
+        <textarea name="text" rows="8" cols="80" style="margin: 0px; width: 1305px; height: 106px;"></textarea>
+
+        <div class="custom-control custom-switch">
+          <input type="checkbox" class="custom-control-input" id="switch1"  name="removepunc">
+          <label class="custom-control-label" for="switch1">Remove punctuations</label>
+        </div>
+        <br>
+        <div class="custom-control custom-switch">
+          <input type="checkbox" class="custom-control-input" id="switch2" name="fullcaps">
+          <label class="custom-control-label" for="switch2">capitalize text</label>
+        </div>
+        <br>
+        <div class="custom-control custom-switch">
+          <input type="checkbox" class="custom-control-input" id="switch3" name="newliner">
+          <label class="custom-control-label" for="switch3">remove newline</label>
+        </div>
+        <br>
+        <div class="custom-control custom-switch">
+          <input type="checkbox" class="custom-control-input" id="switch4" name="spaceremover">
+          <label class="custom-control-label" for="switch4">remove extra spaces</label>
+        </div>
+        <br>
+        <div class="custom-control custom-switch">
+          <input type="checkbox" class="custom-control-input" id="switch5" name="charcounter">
+          <label class="custom-control-label" for="switch5">count no. of characters</label>
+        </div>
+        <br>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+
+      </form>
+    </div>
+
+
+
+
+
+  </body>
+</html>
